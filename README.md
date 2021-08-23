@@ -41,24 +41,26 @@ First start by building out the desired process. Once the process is complete, p
 connector does not modify the data. The operation should have document tracking setup. This configuration will allow 
 for the documents passing through the connector to be easily found within Process Reporting.
 
+A connection must be created but there is no configuration needed.
+
 ![Document Tracker Connection](resources/DocumentTrackerConnection.png?raw=true)
 
-A connection must be created but there is no configuration needed.
+There is only one configuration within the operation, which is under the Tracking tab. The field should be
+populated
+with the document id. If you have multiple insertion points within the process, then multiple operations should be
+created with unique names to aid in identifying which part of the process the documents were from.
 
 ![Document Tracker Operation](resources/DocumentTrackerOperation.png?raw=true)
 ![Document Tracker Operation Tracking](resources/DocumentTrackerOperationTracking.png?raw=true)
 
-There is only one configuration within the operation, which is under the Tracking tab. The field should be 
-populated 
-with the document id. If you have multiple insertion points within the process, then multiple operations should be 
-created with unique names to aid in identifying which part of the process the documents were from. 
+The below images are from Process Reporting is from the Document Tracker Connector process. The Data Process shape
+creates 6 documents. Inside the document is the number of the loop. The ID within Process Reporting is from the data
+within the document (a single element flat file profile).
 
 ![Document Tracker Process Overview](resources/DocumentTrackerProcessOverview.png?raw=true)
 ![Document Tracker in Process Reporting](resources/DocumentTrackerProcessReporting.png?raw=true)
 
-The above image from Process Reporting is from the Document Tracker Connector process. The Data Process shape 
-creates 6 documents. Inside the document is the number of the loop. The ID within Process Reporting is from the data 
-within the document /(a single element flat file profile/).
+
 
 
 ## Example Use Cases:
