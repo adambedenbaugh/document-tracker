@@ -35,7 +35,7 @@ Using the files that you extracted from the release download, upload the connect
 You can upgrade your Document Tracker Connector version by clicking the "Add Version" button in your existing 
 Document Tracker Connector connector group.
 
-### How to User the Connector within Boomi
+### How to Use the Connector within Boomi
 
 First start by building out the desired process. Once the process is complete, place the Document Tracker connector anywhere except for the start shape. The incoming document will be visible within Process Reporting. The 
 connector does not modify the data. The operation should have document tracking setup. This configuration will allow 
