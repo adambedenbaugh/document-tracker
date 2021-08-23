@@ -1,10 +1,9 @@
-#Document Tracking Connector
+# Document Tracker Connector
 
-##Purpose
+## Purpose
 
-The Document Tracking Connector is for debugging processes that needs to be deployed for testing. This connector can be 
-placed 
-anywhere within the document flow to view the document and easily find the document by use of tracked fields. Modifying a process for debugging can occur easily by placing the connector within the flow.
+The Document Tracker Connector is for debugging processes that needs to be deployed for testing. This connector can be 
+placed anywhere within the document flow to view the document and easily find the document by use of tracked fields. Modifying a process for debugging can occur easily by placing the connector within the document flow.
 
 The connector and operation require no setup. A new connector and operation does need to be created. The recommended modification is to set the tracking fields. 
 
@@ -18,7 +17,7 @@ and release the connector files.
 
 Download the latest Document Tracker Connector release from the [Releases](https://github.com/adambedenbaugh/document-tracker-connector/releases) page.
 
-You should now have the following files:
+You should now have a zip file that contains the following files:
 
 * document-tracker-connector-\<version>--car.zip
 * connector-descriptor.xml
@@ -38,7 +37,7 @@ Once you install the connector to your account, you can begin using it like any 
 
 
 
-##Example Use Cases:
+## Example Use Cases:
 
 * Applying document tracking anywhere in the process.  This is especially useful if all the operations are batch.  This connector could be put in line at some point where the documents are split, recording the record id's per document in process reporting and searching by tracked fields.
 * Ability to retrieve documents anywhere in the process from the documents API.  This could be particularly useful for test harness processes and test assertion.

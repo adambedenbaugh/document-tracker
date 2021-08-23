@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenericConnectorDescriptor>
-    <operation supportsBrowse="false" types="EXECUTE"/>
+    <operation supportsBrowse="false" types="EXECUTE" trackedDocument="request" />
 </GenericConnectorDescriptor>
