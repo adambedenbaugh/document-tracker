@@ -5,7 +5,10 @@
 The Document Tracker Connector is for debugging processes that needs to be deployed for testing. This connector can be 
 placed anywhere within the document flow to view the document and easily find the document by use of tracked fields. Modifying a process for debugging can occur easily by placing the connector within the document flow.
 
-The connector and operation require no setup. A new connector and operation does need to be created. The recommended modification is to set the tracking fields. 
+The connection requires no setup. The operation also requires no set up, but tracked fields are encouraged. A 
+new 
+connector and operation will need to be created. Multiple operations should be created for each insertion point 
+to view document location within the document flow. 
 
 ## Getting Started
 
@@ -32,9 +35,30 @@ Using the files that you extracted from the release download, upload the connect
 You can upgrade your Document Tracker Connector version by clicking the "Add Version" button in your existing 
 Document Tracker Connector connector group.
 
-### Using The Connector
-Once you install the connector to your account, you can begin using it like any other application connector.
+### How to User the Connector within Boomi
 
+First start by building out the desired process. Once the process is complete, place the Document Tracker connector anywhere except for the start shape. The incoming document will be visible within Process Reporting. The 
+connector does not modify the data. The operation should have document tracking setup. This configuration will allow 
+for the documents passing through the connector to be easily found within Process Reporting.
+
+![Document Tracker Connection](resources/DocumentTrackerConnection.png?raw=true)
+
+A connection must be created but there is no configuration needed.
+
+![Document Tracker Operation](resources/DocumentTrackerOperation.png?raw=true)
+![Document Tracker Operation Tracking](resources/DocumentTrackerOperationTracking.png?raw=true)
+
+There is only one configuration within the operation, which is under the Tracking tab. The field should be 
+populated 
+with the document id. If you have multiple insertion points within the process, then multiple operations should be 
+created with unique names to aid in identifying which part of the process the documents were from. 
+
+![Document Tracker Process Overview](resources/DocumentTrackerProcessOverview.png?raw=true)
+![Document Tracker in Process Reporting](resources/DocumentTrackerProcessReporting.png?raw=true)
+
+The above image from Process Reporting is from the Document Tracker Connector process. The Data Process shape 
+creates 6 documents. Inside the document is the number of the loop. The ID within Process Reporting is from the data 
+within the document /(a single element flat file profile/).
 
 
 ## Example Use Cases:
