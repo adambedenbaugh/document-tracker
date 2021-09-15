@@ -99,7 +99,7 @@
                         <phase>package</phase>
                         <configuration>
                             <target>
-                                <zip destfile="${basedir}/release/terminal-v${project.version}.zip"
+                                <zip destfile="${basedir}/release/document-tracker-v${project.version}.zip"
                                      basedir="${basedir}/target"
                                      includes="*-car.zip,connector-descriptor.xml"
                                      update="true"/>

@@ -18,7 +18,7 @@ and release the connector files.
 
 ### Download the latest release
 
-Download the latest Document Tracker Connector release from the [Releases](https://github.com/adambedenbaugh/document-tracker-connector/releases) page.
+Download the latest Document Tracker Connector release from the [Releases](https://github.com/adambedenbaugh/document-tracker/releases) page.
 
 You should now have a zip file that contains the following files:
 
