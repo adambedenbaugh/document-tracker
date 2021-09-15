@@ -13,6 +13,7 @@
                 <include>connector-descriptor.xml</include>
             </includes>
         </fileSet>
+
     </fileSets>
     <dependencySets>
         <dependencySet>

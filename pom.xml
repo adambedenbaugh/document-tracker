@@ -101,7 +101,7 @@
                             <target>
                                 <zip destfile="${basedir}/release/terminal-v${project.version}.zip"
                                      basedir="${basedir}/target"
-                                     includes="*--car.zip,connector-descriptor.xml"
+                                     includes="*-car.zip,connector-descriptor.xml"
                                      update="true"/>
                             </target>
                         </configuration>
